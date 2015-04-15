@@ -1,0 +1,31 @@
+ImpulseBooster
+
+This is a standalone addon for improving pre-WotLK clients' UI loading speed.
+Pre-WotLK clients have their UI code tightly bound to display refresh rate, this addon works around this issue during loading time.
+
+The addon's main function is split in 3 modes, depending on what is enabled when UI is loading:
+* VSync is enabled: Disables VSync, Restarts graphics engine, UI loads faster, Enables VSync back and does a final graphics restart.
+* VSync is disabled: Provides additional FPS boost during UI loading.
+* IBSync: This addon's custom frame limiting mode, which keeps frame limit during playing, but disables it during loading without the need for restarting.
+
+The addon is fully automated. The only UI part you will ever want to mess with is located into Video Options.
+IBSync will be automatically shut down, if custom "maxFPS" value is being forced or incorrect refresh rate is detected.
+
+Feature list:
+
+* Fully automated UI loading speed boost.
+* Additional frame limiting mode in video options: ImpulseBooster Sync (IBSync), which removes the need for restarts.
+* Additional CPU tweak: Unlocks default CPU core affinity for pre-WotLK clients to all cores but the first one, instead of just first two cores. This setting is applied automatically and requires a client restart.
+* Additional CPU tweak: Detects forced wrong timing methods and corrects them. Corrected setting will be applied after a client restart.
+
+Cut features in 3.0:
+
+* Lua garbage collection suppression while loading/reloading UI. This feature was removed due to negligible effect and being potentially unsafe for taints. This feature can be reintroduced on demand.
+
+INSTALLATION:
+* Windows users: Download and unzip regular edition package into "Interface\AddOns\" subfolder of your The Burning Crusade client.
+* Linux (WINE) users: Download and unzip WINE edition package into "Data/" subfolder of your The Burning Crusade client.
+
+IMPORTANT NOTES:
+
+Its recommended for Linux users to use their respective dedicated edition, because this WINE bug doesn't allow this addon to be loaded first: https://bugs.winehq.org/show_bug.cgi?id=34122 
