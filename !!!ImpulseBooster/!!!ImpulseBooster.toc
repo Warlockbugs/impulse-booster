@@ -1,6 +1,8 @@
 ## Interface: 20400
 ## Title: I|cFFFF8080mpulse|rBooster
+## Title-ruRU: И|cFFFF8080мпульсный|rУскоритель
 ## Notes: Improves your UI loading time and game performance in some cases. Compatible with WoW 1.9.0 and higher.
+## Notes-ruRU: В некоторых случаях улучшает время загрузки пользовательского интерфейса и производительность игры. Совместим с WoW 1.9.0 и выше.
 ## X-Category: Interface Enhancements
 ## X-Date: 2016-07-16
 ## X-Website: https://github.com/Warlockbugs/impulse-booster
